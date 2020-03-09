@@ -1,0 +1,71 @@
+---
+title: "Example Slide Style"
+subtitle: "Tests"
+author: "Phil Chodrow"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["style/css/DJN_xaringan_theme.css", "style/css/DJN_style.css",  "style/css/pc_custom_style.css"]
+    seal: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "style/js/macros.js"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+---
+
+```{r child = "style/rmd/DJN_setup.Rmd"}
+```
+
+---
+
+
+# This is a plain slide. 
+
+Here is some content on the slide. 
+
+.pull-left[
+This got pulled left.
+]
+
+.pull-right[
+This got pulled right. 
+]
+
+---
+
+# This slide has a scaled image on it. 
+
+![:scale 90%](img/network_sample.png)
+
+---
+
+class: left, middle
+background-image: url(img/network_sample_blur.png)
+
+## this slide has a background. 
+
+---
+
+background-color: #F5B895
+
+# This slide has a solid color background
+
+Also a footnote. 
+
+.footnote[footnote content test]
+
+---
+
+class: left, inverse
+
+# This slide uses the inverse class. 
+
+Here's some stuff. 
+
